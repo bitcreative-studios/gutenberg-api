@@ -12,6 +12,7 @@
     "@types/cheerio": "^0.22.12",
     "@types/jest": "^24.0.15",
     "@types/node": "^12.6.2",
+    "@types/node-dir": "^0.0.33",
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
@@ -23,9 +24,12 @@
   },
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "build": "yarn tsc",
+    "test:watch": "jest --watch",
+    "test:debug": "node --inspect -r ts-node/register node_modules/.bin/jest -i --watch"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3"
+    "cheerio": "^1.0.0-rc.3",
+    "node-dir": "^0.1.17"
   }
 }
