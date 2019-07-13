@@ -1,5 +1,10 @@
+# Dependencies
 node_modules
+
+# Gutenberg Project Catlog Data
+catalog-data
 
 # JetBrains/VSCODE IDE files
 .idea
 .vscode
+node_modules
